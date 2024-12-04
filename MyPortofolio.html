@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizwe Mdletshe Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4CAF50, #2E8B57);
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .profile {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #4CAF50;
+        }
+
+        section {
+            margin: 20px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        .form-section {
+            margin-top: 40px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form textarea, form button {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        form button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #2E8B57;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .profile img {
+                width: 120px;
+                height: 120px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            nav a {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fisokuhle Sizwe Mdletshe</h1>
+        <p>Bachelor of Science in Computer Science and Information Technology</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section class="profile" id="about">
+            <img src="1.jpg" alt="Profile Picture">
+            <p>Hello! I am a passionate Computer Science and Information Technology student specializing in Software Development.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor Of Science in Computer Science and Information Technology</strong> - University of KwaZulu Natal (2022 - 2024)</li>
+                <li><strong>National Senior Certificate (NSC)</strong> - Nkanyiso Secondary School (2021)</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, Java, C++</li>
+                <li>Web Development: HTML, ASP.NET, CSS</li>
+                <li>Database Management: MySQL</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Portfolio Website:</strong> Created a responsive personal Portfolio Website using HTML, CSS, and JavaScript.</li>
+                <li><strong>POS System and Website:</strong> Developed a Front-end System and Website for a Liquor Store. The project included Point of Sale, Inventory Management, and Delivery System functionalities.</li>
+            </ul>
+        </section>
+
+        <section class="form-section" id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sizwe Mdletshe. All Rights Reserved.</p>
+        <p>Follow me on: <a href="#">GitHub</a> | <a href="https://linkedin.com/in/sizwe-mdletshe-4954a62a0" target="_blank">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
